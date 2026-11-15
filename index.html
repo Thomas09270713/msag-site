@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Maison Symone Advisory Group</title>
+<link rel="icon" type="image/png" href="img/msag-mono-ink.png">
+<meta property="og:title" content="Maison Symone Advisory Group">
+<meta property="og:description" content="Independent, owner-side real estate asset management for owners, sponsors and investors.">
+<meta property="og:url" content="https://maisonsymoneadvisory.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://maisonsymoneadvisory.com/img/share-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://maisonsymoneadvisory.com/img/share-banner.jpg">
+<meta name="description" content="Independent, owner-side real estate asset management for owners, sponsors and investors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap">
+<style>
+/* Maison Symone Advisory Group — firm site.
+   Shares the owner portal's and the portfolio's language: blush ground, white cards with sand borders,
+   cocoa and taupe, burgundy accent; Cormorant Garamond display, Jost text, Pinyon Script used sparingly.
+   Several pages, routed on the hash. */
+:root{
+  color-scheme:light;
+  --cream:#F8F4F0; --linen:#F0E8E1; --stone:#E9DED3; --paper:#FFFFFF; --sand:#EDE4DB; --sand-2:#E2D7CC;
+  --taupe:#A88B6E; --cocoa:#463B35; --deep:#2F2723; --ink:#3B3330; --muted:#6F6158; --soft:#7A6C62;
+  --wine:#6E1F2B; --wine-tint:#F6ECEA; --rose:#EBC7C0; --sage:#4F7358; --clay:#A8463F;
+  --on-dark:#F8F4F0; --on-dark-muted:#E2D5CB; --rule:rgba(59,51,48,.13); --rule-dark:rgba(248,244,240,.2);
+  --display:"Cormorant Garamond",Garamond,"Times New Roman",serif;
+  --text:"Jost","Helvetica Neue",Arial,sans-serif;
+  --script:"Pinyon Script","Snell Roundhand",cursive;
+  --r:16px; --max:1220px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:clip;padding-bottom:env(safe-area-inset-bottom,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--deep);z-index:40}
+img{display:block;max-width:100%}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{font-family:var(--display);font-weight:500;margin:0;line-height:1.06;text-wrap:balance}
+h1,h2{text-transform:uppercase;letter-spacing:.03em}
+h1 em,h2 em,h3 em{font-style:italic;text-transform:none;font-weight:400;letter-spacing:0;color:var(--wine)}
+.dark h1 em,.dark h2 em,.dark h3 em{color:var(--rose)}
+:focus-visible{outline:2px solid var(--taupe);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
+.lab{font-size:11.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.dark .lab{color:var(--on-dark-muted)}
+.script{font-family:var(--script);font-size:clamp(30px,2.8vw,40px);line-height:1.1;color:var(--taupe);display:inline-block}
+.dark .script{color:var(--rose)}
+.pill{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;background:var(--wine);color:var(--on-dark);font:500 12px/1 var(--text);letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border:1px solid var(--wine);cursor:pointer;transition:background .2s,transform .2s,color .2s,border-color .2s}
+.pill:hover{background:var(--cocoa);border-color:var(--cocoa);transform:translateY(-1px)}
+.pill.line{background:transparent;color:var(--ink);border-color:var(--sand-2)}
+.pill.line:hover{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.pill.cream{background:var(--cream);border-color:var(--cream);color:var(--wine)}
+.pill.cream:hover{background:var(--paper);border-color:var(--paper)}
+.dark .pill.line{color:var(--on-dark);border-color:var(--rule-dark)}
+.dark .pill.line:hover{background:var(--cream);color:var(--cocoa)}
+.go{display:inline-flex;align-items:center;gap:8px;font:500 12px/1.4 var(--text);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.go::after{content:"→";letter-spacing:0;transition:transform .2s}
+.go:hover::after{transform:translateX(3px)}
+.card{background:var(--paper);border:1px solid var(--sand);border-radius:var(--r)}
+.ico{flex:none;width:44px;height:44px;border-radius:50%;background:#F3ECE5;color:var(--wine);display:flex;align-items:center;justify-content:center}
+.ico svg{width:20px;height:20px}
+.dark .ico{background:rgba(248,244,240,.12);color:var(--on-dark)}
+.sec{padding-block:clamp(64px,8vw,104px)}
+.sec.tight{padding-top:0}
+.head{display:flex;flex-direction:column;gap:12px;margin-bottom:clamp(32px,4vw,48px);max-width:780px}
+.head h2{font-size:clamp(32px,3.8vw,50px)}
+.head p{color:var(--muted);font-size:17px;max-width:60ch}
+.dark .head p{color:var(--on-dark-muted)}
+.head.center{text-align:center;align-items:center;margin-inline:auto}
+.dark{background:var(--cocoa);color:var(--on-dark)}
+.linen{background:var(--linen)}
+.white{background:var(--paper)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(248,244,240,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{height:42px;width:auto}
+.brand span{font-family:var(--display);font-size:15px;letter-spacing:.24em;text-transform:uppercase;line-height:1.15}
+.brand small{display:block;font-family:var(--text);font-size:9px;letter-spacing:.34em;color:var(--muted)}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:10px 14px;border-radius:999px;color:var(--cocoa);transition:background .2s}
+.nav a:hover{background:var(--stone)}
+.nav a[aria-current="page"]{background:var(--cocoa);color:var(--paper)}
+.nav .pill{margin-left:8px;padding:12px 20px;color:var(--on-dark)}
+.nav .pill[aria-current="page"]{background:var(--wine)}
+.menu{display:none;background:none;border:1px solid var(--sand-2);color:inherit;font:500 11.5px var(--text);letter-spacing:.16em;text-transform:uppercase;padding:10px 16px;border-radius:999px;cursor:pointer}
+
+/* page opener (inner pages) */
+.opener{padding-block:clamp(56px,7vw,92px) clamp(36px,5vw,56px)}
+.opener .crumb{display:flex;align-items:center;gap:10px}
+.opener .crumb b{font-family:var(--display);font-size:15px;font-weight:500;color:var(--wine);letter-spacing:.06em}
+.opener .crumb i{width:34px;height:1px;background:var(--sand-2)}
+.opener h1{font-size:clamp(42px,6vw,84px);margin-top:18px;max-width:14em}
+.opener p{margin-top:22px;max-width:60ch;font-size:18px;color:var(--muted)}
+.opener .acts{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:30px}
+
+/* home hero */
+.hero{position:relative;overflow:hidden;background:var(--deep);color:var(--on-dark);min-height:min(760px,calc(100svh - 76px));display:flex;align-items:flex-end}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% 55%}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(47,39,35,.9) 0%,rgba(47,39,35,.7) 40%,rgba(47,39,35,.15) 78%),linear-gradient(0deg,rgba(47,39,35,.55),rgba(47,39,35,0) 45%)}
+.hero .in{position:relative;width:100%;padding-block:110px 72px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:end}
+.hero h1{font-size:clamp(42px,5.6vw,80px);line-height:1}
+.hero h1 em{color:var(--rose)}
+.hero p{margin-top:22px;max-width:48ch;font-size:18px;color:var(--on-dark-muted)}
+.hero .acts{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:32px}
+.hero .go{color:var(--on-dark)}
+.hero .script{color:var(--rose)}
+.glass{background:rgba(248,244,240,.1);border:1px solid var(--rule-dark);border-radius:var(--r);padding:22px 24px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.glass dl{margin:0}
+.glass div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:14px;padding-block:11px;border-top:1px solid var(--rule-dark);font-size:14.5px}
+.glass div:first-child{border-top:0;padding-top:0}
+.glass dt{font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-muted);padding-top:3px}
+.glass dd{margin:0}
+
+/* value cards */
+.vals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.val{padding:24px 22px 24px;display:flex;flex-direction:column;gap:10px}
+.val .ctop{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.val h3{font-size:23px;line-height:1.15}
+.val p{font-size:14.5px;color:var(--muted)}
+
+/* split feature */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.split h2{font-size:clamp(32px,3.8vw,50px);margin-top:10px}
+.split p.t{margin-top:18px;color:var(--muted);font-size:17px;max-width:52ch}
+.dark .split p.t{color:var(--on-dark-muted)}
+.split .acts{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:28px}
+.arch{position:relative;aspect-ratio:5/4;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--stone)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.split .art{position:relative}
+.split .art .key{position:absolute;left:-6%;bottom:4%;width:42%;filter:drop-shadow(0 22px 20px rgba(47,39,35,.28));transform:rotate(-8deg)}
+
+/* tier mini cards (home) */
+.minis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mini{padding:26px 24px;display:flex;flex-direction:column;gap:12px;text-decoration:none;transition:transform .2s,border-color .2s}
+.mini:hover{transform:translateY(-3px);border-color:var(--taupe)}
+.mini h3{font-size:30px}
+.mini .tag{font-family:var(--display);font-style:italic;font-size:19px;color:var(--wine)}
+.mini p{font-size:14.5px;color:var(--muted)}
+.mini .go{margin-top:auto;align-self:flex-start}
+.meter{display:flex;gap:4px}
+.meter i{width:18px;height:4px;border-radius:2px;background:var(--sand-2)}
+.meter i.f{background:var(--wine)}
+.lvl{display:flex;justify-content:space-between;align-items:center;gap:10px}
+
+/* portal preview */
+.screen{background:var(--paper);border:1px solid var(--sand);border-radius:18px;overflow:hidden;box-shadow:0 44px 70px -46px rgba(47,39,35,.55)}
+.screen .bar{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--sand)}
+.screen .bar i{width:10px;height:10px;border-radius:50%;background:var(--sand)}
+.sbody{display:grid;grid-template-columns:140px minmax(0,1fr)}
+.sside{background:var(--linen);padding:18px 10px;display:flex;flex-direction:column;gap:3px}
+.sside img{width:96px;margin:0 auto 12px}
+.sside span{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;padding:8px 10px;border-radius:8px;color:var(--cocoa)}
+.sside span.on{background:var(--cocoa);color:var(--paper)}
+.smain{background:var(--cream);padding:18px 20px 20px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.swel{font-family:var(--script);font-size:21px;color:var(--taupe);line-height:1.1}
+.stitle{font-family:var(--display);font-weight:500;font-size:26px;letter-spacing:.06em;text-transform:uppercase;line-height:1.1}
+.smeta{font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.skpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.skpis div{background:var(--paper);border:1px solid var(--sand);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.skpis span{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.skpis b{font-family:var(--display);font-weight:500;font-size:21px;line-height:1.1}
+.skpis em{font-style:normal;font-size:9.5px;color:var(--muted)}
+.skpis em.down{color:var(--clay)}.skpis em.up{color:var(--sage)}
+.schart{background:var(--paper);border:1px solid var(--sand);border-radius:10px;padding:10px 12px 6px;margin-top:8px}
+.schart span{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.snote{background:var(--paper);border:1px solid var(--sand);border-radius:10px;padding:12px 14px;margin-top:8px;font-family:var(--display);font-size:15px;line-height:1.4}
+.snote small{display:block;font-family:var(--text);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.figcap{margin-top:10px;font-size:12px;color:var(--muted)}
+.dark .figcap{color:var(--on-dark-muted)}
+
+/* principal card */
+.principal{display:grid;grid-template-columns:200px minmax(0,1fr) auto;gap:clamp(24px,4vw,48px);align-items:center;padding:clamp(22px,3vw,34px)}
+.principal img{width:200px;aspect-ratio:4/5;object-fit:cover;object-position:50% 8%;border-radius:999px 999px 12px 12px}
+.principal h3{font-size:clamp(28px,2.8vw,38px)}
+.principal p{margin-top:10px;color:var(--muted);max-width:52ch}
+.creds{display:flex;gap:28px;margin-top:18px;flex-wrap:wrap}
+.creds b{display:block;font-family:var(--display);font-weight:500;font-size:34px;line-height:1;color:var(--wine);font-variant-numeric:lining-nums}
+.creds span{font-size:12.5px;color:var(--muted)}
+.principal .acts{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.fine{font-size:12.5px;color:var(--muted)}
+
+/* cta band */
+.cta{position:relative;overflow:hidden;background:var(--deep);color:var(--on-dark)}
+.cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.cta .wrap{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;padding-block:clamp(80px,10vw,124px)}
+.cta h2{font-size:clamp(34px,4.4vw,60px);max-width:15em}
+.cta h2 em{color:var(--rose)}
+.cta p{max-width:52ch;color:var(--on-dark-muted);font-size:17px}
+.cta .acts{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 20px;margin-top:8px}
+.cta .go{color:var(--on-dark)}
+
+/* WHY page */
+.roles{overflow:hidden;padding:0}
+table.vs{width:100%;border-collapse:collapse;font-size:15px}
+.vs th,.vs td{padding:16px 22px;border-bottom:1px solid var(--sand);text-align:left;vertical-align:top}
+.vs thead th{font-family:var(--display);font-weight:500;font-size:24px;background:var(--linen);border-bottom:1px solid var(--sand-2)}
+.vs thead th small{display:block;font-family:var(--text);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.vs thead th.us{background:var(--wine);color:var(--on-dark)}
+.vs thead th.us small{color:var(--rose)}
+.vs th[scope=row]{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);width:20%;padding-top:19px}
+.vs td.us{background:var(--wine-tint)}
+.vs tbody tr:last-child th,.vs tbody tr:last-child td{border-bottom:0}
+.gaps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.gap{padding:26px 26px 24px;display:grid;grid-template-columns:44px minmax(0,1fr);gap:6px 18px}
+.gap .ico{grid-row:span 3}
+.gap h3{font-size:23px;line-height:1.2}
+.gap p{font-size:14.5px;color:var(--muted)}
+.gap .fix{margin-top:8px;padding-top:12px;border-top:1px solid var(--sand);font-size:14px;color:var(--ink)}
+.gap .fix b{font-weight:500;color:var(--wine)}
+.math{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(28px,5vw,64px);align-items:center}
+.math h2{font-size:clamp(32px,3.8vw,50px);margin-top:10px}
+.math p.t{margin-top:18px;color:var(--on-dark-muted);font-size:17px;max-width:50ch}
+.calc{background:rgba(248,244,240,.07);border:1px solid var(--rule-dark);border-radius:var(--r);padding:clamp(22px,3vw,34px);display:flex;flex-direction:column;gap:18px}
+.calc label{display:flex;flex-direction:column;gap:8px;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dark-muted)}
+.calc .row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.calc input[type=range]{width:100%;accent-color:var(--rose)}
+.calc output{font-family:var(--display);font-size:26px;letter-spacing:0;text-transform:none;color:var(--on-dark)}
+.calc .res{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-top:16px;border-top:1px solid var(--rule-dark)}
+.calc .res div{display:flex;flex-direction:column;gap:2px}
+.calc .res span{font-size:12.5px;color:var(--on-dark-muted)}
+.calc .res b{font-family:var(--display);font-weight:500;font-size:clamp(32px,3.4vw,46px);line-height:1;color:var(--rose);font-variant-numeric:lining-nums}
+.calc .note{font-size:12px;color:var(--on-dark-muted)}
+.proofs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.proof{padding:24px 24px 22px;display:flex;flex-direction:column;gap:8px}
+.proof b{font-family:var(--display);font-weight:500;font-size:46px;line-height:1;color:var(--wine);font-variant-numeric:lining-nums}
+.proof h3{font-size:21px}
+.proof p{font-size:14px;color:var(--muted)}
+.proof .from{font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-top:auto;padding-top:6px}
+
+/* ENGAGEMENTS page */
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.tier{position:relative;display:flex;flex-direction:column;gap:16px;padding:clamp(24px,2.6vw,34px);cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s}
+.tier:hover{border-color:var(--taupe)}
+.tier.on{border-color:var(--wine);box-shadow:0 0 0 1px var(--wine),0 30px 50px -34px rgba(110,31,43,.45)}
+.tier .badge{position:absolute;top:-12px;right:22px;background:var(--wine);color:var(--on-dark);font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.tier h3{font-size:clamp(30px,2.6vw,36px)}
+.tier .tag{font-family:var(--display);font-style:italic;font-size:20px;line-height:1.3;color:var(--wine)}
+.tier .desc{font-size:15px;color:var(--muted)}
+.tier ul{list-style:none;margin:0;padding:16px 0 0;border-top:1px solid var(--sand);display:flex;flex-direction:column;gap:9px;font-size:14.5px}
+.tier li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:10px;align-items:baseline}
+.tier li::before{content:"";width:6px;height:6px;background:var(--wine);transform:translateY(-2px) rotate(45deg)}
+.tier li.inc{color:var(--muted);font-style:italic}
+.tier li.inc::before{background:transparent;border:1px solid var(--taupe)}
+.tier .fit{font-size:13.5px;color:var(--muted);padding-top:14px;border-top:1px solid var(--sand)}
+.tier .fit b{font-weight:500;color:var(--ink)}
+.tier .fee{margin-top:auto;background:var(--cream);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.tier .fee span{font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.tier .fee b{font-family:var(--display);font-weight:500;font-size:24px;line-height:1.2}
+.tier .fee small{font-size:13px;color:var(--muted)}
+.tier .pill{align-self:stretch}
+.note{margin-top:16px;font-size:13.5px;color:var(--muted);max-width:90ch}
+.cmp-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0}
+table.cmp{width:100%;min-width:720px;border-collapse:collapse;font-size:14.5px}
+.cmp th,.cmp td{padding:13px 18px;border-bottom:1px solid var(--sand);text-align:center;vertical-align:middle}
+.cmp thead th{font-family:var(--display);font-weight:500;font-size:21px;line-height:1.15;background:var(--linen);border-bottom:1px solid var(--sand-2)}
+.cmp thead th small{display:block;font-family:var(--text);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.cmp th[scope=row]{text-align:left;font-weight:400;width:44%}
+.cmp tr.grp th{background:var(--cream);text-align:left;font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--wine);padding-block:11px}
+.cmp td.on{color:var(--wine);font-size:16px}
+.cmp td.off{color:#C9BCB1}
+.cmp td.txt{font-size:13.5px}
+.cmp .col-on{background:var(--wine-tint)}
+.cmp thead th.col-on{background:var(--wine);color:var(--on-dark)}
+.cmp thead th.col-on small{color:var(--rose)}
+.cmp tbody tr:last-child th,.cmp tbody tr:last-child td{border-bottom:0}
+.chooser{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.choose{padding:22px 22px 20px;display:flex;flex-direction:column;gap:8px}
+.choose .q{font-family:var(--display);font-size:21px;line-height:1.25}
+.choose .a{font-size:14px;color:var(--muted)}
+.choose .a b{color:var(--wine);font-weight:500}
+
+/* PROJECTS page */
+.projs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pj{padding:26px 24px 24px;display:flex;flex-direction:column;gap:12px}
+.pj .ctop{display:flex;justify-content:space-between;align-items:flex-start}
+.pj .n{font-family:var(--display);font-size:18px;color:var(--taupe)}
+.pj h3{font-size:25px;line-height:1.15}
+.pj p{font-size:14.5px;color:var(--muted)}
+.pj dl{margin:auto 0 0;padding-top:14px;border-top:1px solid var(--sand);display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.pj dl div{display:grid;grid-template-columns:80px minmax(0,1fr);gap:10px}
+.pj dt{font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);padding-top:2px}
+.pj dd{margin:0}
+.pj .go{margin-top:6px;align-self:flex-start}
+.phase{border-top:1px solid var(--rule-dark)}
+.phase div{display:grid;grid-template-columns:130px minmax(0,1fr);gap:18px;padding-block:16px;border-bottom:1px solid var(--rule-dark)}
+.phase dt{font-size:10.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--rose);padding-top:3px}
+.phase dd{margin:0;font-size:15px}
+.phase dl{margin:0}
+
+/* HOW WE WORK page */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:s}
+.steps li{counter-increment:s;padding:24px 22px;display:flex;flex-direction:column;gap:8px}
+.steps li::before{content:"0" counter(s);font-family:var(--display);font-size:34px;line-height:1;color:var(--wine)}
+.steps small{font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--taupe)}
+.steps b{font-family:var(--display);font-weight:500;font-size:23px;line-height:1.2}
+.steps span{font-size:14.5px;color:var(--muted)}
+.month{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.month article{padding:24px 24px 22px;display:flex;flex-direction:column;gap:12px}
+.month h3{font-size:24px}
+.month ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:14.5px}
+.month li{display:grid;grid-template-columns:14px minmax(0,1fr);gap:10px;align-items:baseline}
+.month li::before{content:"";width:6px;height:6px;background:var(--wine);transform:translateY(-2px) rotate(45deg)}
+.scope{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.scope article{padding:24px}
+.scope h3{font-size:24px;margin-bottom:12px}
+.scope ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.scope li{padding-block:9px;border-top:1px solid var(--sand);font-size:15px}
+.scope li:first-child{border-top:0}
+.scope li span{display:block;font-size:13px;color:var(--muted)}
+.faq{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,5vw,80px)}
+.faq h2{font-size:clamp(32px,3.8vw,50px);margin-top:10px}
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-child{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding-block:19px;font-family:var(--display);font-weight:500;font-size:21px;line-height:1.3}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:12px;height:12px;flex:none;background:linear-gradient(var(--ink),var(--ink)) center/12px 1px no-repeat,linear-gradient(var(--ink),var(--ink)) center/1px 12px no-repeat;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:20px;color:var(--muted);max-width:64ch}
+
+/* CONTACT page */
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:start}
+.direct{padding:24px 26px}
+.direct dl{margin:0}
+.direct div{display:grid;grid-template-columns:90px minmax(0,1fr);gap:14px;padding-block:14px;border-top:1px solid var(--sand);font-size:15px}
+.direct div:first-child{border-top:0;padding-top:0}
+.direct dt{font-size:10.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.direct dd{margin:0;word-break:break-word}
+.direct a{text-underline-offset:4px}
+.expect{margin-top:16px;padding:24px 26px}
+.expect h3{font-size:22px;margin-bottom:10px}
+.expect ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;font-size:14.5px;color:var(--muted)}
+.form{padding:clamp(22px,3vw,36px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 18px}
+.form .full{grid-column:1/-1}
+.form label{display:flex;flex-direction:column;gap:6px;font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.form input,.form select,.form textarea{font:16px/1.4 var(--text);color:var(--ink);background:var(--cream);border:1px solid var(--sand);border-radius:10px;padding:12px 13px;letter-spacing:0;text-transform:none;width:100%}
+.form textarea{min-height:110px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--taupe);outline-offset:1px}
+.form .acts{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.msg{font-size:14px;color:var(--muted)}
+.out{grid-column:1/-1;background:var(--linen);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:12px}
+.out[hidden]{display:none!important}
+.out pre{margin:0;white-space:pre-wrap;font:14px/1.6 var(--text)}
+.out .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* footer */
+.foot{background:var(--deep);color:var(--on-dark-muted);font-size:13.5px}
+.foot .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-block:60px 36px}
+.foot img{width:170px;margin-bottom:16px}
+.foot h4{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--on-dark);margin-bottom:12px}
+.foot a{display:block;margin-bottom:7px;text-decoration:none}
+.foot a:hover{color:var(--on-dark);text-decoration:underline;text-underline-offset:3px}
+.foot .cols span{display:block;margin-bottom:7px;word-break:break-word}
+.foot .legal{border-top:1px solid var(--rule-dark);padding-block:20px 28px;font-size:12px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+
+
+/* back button + page pager */
+.back{display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;padding:9px 16px 9px 12px;border-radius:999px;border:1px solid var(--sand-2);background:var(--paper);color:var(--cocoa);font:500 11.5px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.back:hover{background:var(--cocoa);border-color:var(--cocoa);color:var(--paper)}
+.back svg{width:16px;height:16px}
+.pager{border-top:1px solid var(--rule);background:var(--cream)}
+.pager .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding-block:28px}
+.pager a{display:flex;flex-direction:column;gap:4px;padding:18px 22px;border-radius:var(--r);border:1px solid var(--sand);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.pager a:hover{border-color:var(--taupe);transform:translateY(-2px)}
+.pager a.next{text-align:right;grid-column:2}
+.pager span{font-size:10.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.pager b{font-family:var(--display);font-weight:500;font-size:22px;line-height:1.2}
+@media (max-width:640px){.pager .wrap{grid-template-columns:minmax(0,1fr)}.pager a.next{grid-column:1}}
+.view[hidden]{display:none!important}
+.view{animation:enter .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes enter{from{opacity:.001;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* responsive */
+@media (max-width:1060px){
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:var(--cream);padding:10px max(22px,env(safe-area-inset-left,0px)) 20px;border-bottom:1px solid var(--rule);box-shadow:0 24px 40px -30px rgba(47,39,35,.5)}
+  .nav.open{display:flex}
+  .nav a{font-size:13px;padding:13px 16px}
+  .nav .pill{margin:10px 0 0;align-self:flex-start}
+  .menu{display:inline-block}
+  .top .wrap{position:relative}
+  .hero .in,.split,.math,.faq,.contact{grid-template-columns:minmax(0,1fr)}
+  .vals{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .minis,.tiers,.chooser,.proofs,.month,.scope{grid-template-columns:minmax(0,1fr)}
+  .projs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .principal{grid-template-columns:150px minmax(0,1fr)}
+  .principal img{width:150px}
+  .principal .acts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center}
+  .tier .badge{right:18px}
+  .split .art{max-width:520px}
+  .foot .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .brand img{height:36px}
+  .brand span{font-size:12.5px;letter-spacing:.18em}
+  .hero .in{padding-block:70px 52px}
+  .hero .shade{background:linear-gradient(0deg,rgba(47,39,35,.95) 0%,rgba(47,39,35,.8) 55%,rgba(47,39,35,.4) 100%)}
+  .hero p,.opener p{font-size:16px}
+  .glass div{grid-template-columns:minmax(0,1fr);gap:2px}
+  .vals,.projs,.steps,.gaps{grid-template-columns:minmax(0,1fr)}
+  .principal{grid-template-columns:minmax(0,1fr)}
+  .principal img{width:160px}
+  .sbody{grid-template-columns:minmax(0,1fr)}
+  .sside{display:none}
+  .skpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  table.vs thead{display:none}
+  table.vs,table.vs tbody,table.vs tr,table.vs th,table.vs td{display:block;width:auto}
+  .vs tr{border-bottom:1px solid var(--sand)}
+  .vs tbody tr:last-child{border-bottom:0}
+  .vs th[scope=row]{width:auto;padding:16px 16px 6px;border:0}
+  .vs td{padding:6px 16px;border:0}
+  .vs td.us{margin:4px 10px 12px;border-radius:10px;padding:10px 12px}
+  .vs td::before{content:attr(data-l);display:block;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+  .vs td.us::before{color:var(--wine)}
+  .calc .row,.calc .res{grid-template-columns:minmax(0,1fr)}
+  .phase div,.direct div{grid-template-columns:minmax(0,1fr);gap:4px}
+  .form{grid-template-columns:minmax(0,1fr)}
+  .foot .cols{grid-template-columns:minmax(0,1fr)}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Maison Symone Advisory Group, home">
+      <img src="img/msag-mono-ink.png" alt="">
+      <span>Maison Symone<small>Advisory Group</small></span>
+    </a>
+    <button class="menu" type="button" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Pages">
+      <a href="#why">Why asset management</a>
+      <a href="#engagements">Engagements</a>
+      <a href="#projects">Projects</a>
+      <a href="#how-we-work">How we work</a>
+      <a class="pill" href="#contact">Request a proposal</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- =========================== HOME =========================== -->
+<div class="view" data-view="home">
+  <section class="hero">
+    <img src="img/florida.jpg" alt="Pool deck and palms at a Florida apartment community" fetchpriority="high">
+    <div class="shade" aria-hidden="true"></div>
+    <div class="wrap in">
+      <div>
+        <span class="lab" style="color:var(--on-dark-muted)">Independent real estate asset management</span>
+        <h1 style="margin-top:18px">The owner's side of <em>the table</em></h1>
+        <p>Your property manager runs the building. MSAG makes sure the building performs as an investment: we set the plan, hold the manager to it and report the results, at the level of involvement you choose.</p>
+        <div class="acts">
+          <a class="pill cream" href="#engagements">View engagements</a>
+          <a class="go" href="#why">Why an asset manager</a>
+        </div>
+      </div>
+      <div class="glass">
+        <dl>
+          <div><dt>We serve</dt><dd>Private owners, family offices, sponsors and investors</dd></div>
+          <div><dt>Property</dt><dd>Multifamily, office, medical office, retail, mixed-use</dd></div>
+          <div><dt>Offer</dt><dd>Three ongoing levels, fixed-scope projects and asset partnerships</dd></div>
+          <div><dt>Based in</dt><dd>Miami, serving Florida, the Southeast and the Northeast</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head center"><span class="script" aria-hidden="true">what changes</span><h2>What an asset manager <em>does for you</em></h2><p>A property can be well run and still underperform as an investment. Asset management closes that gap.</p></div>
+      <div class="vals" id="vals-home"></div>
+      <div style="display:flex;justify-content:center;margin-top:32px"><a class="pill line" href="#why">Why it matters</a></div>
+    </div>
+  </section>
+
+  <section class="sec linen">
+    <div class="wrap">
+      <div class="head"><span class="lab">Engagements</span><h2>How involved do you <em>want us?</em></h2><p>Three levels of ongoing asset management, each building on the last. Move up or down as the asset's needs change.</p></div>
+      <div class="minis" id="minis"></div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:30px"><a class="pill" href="#engagements">Compare engagements</a><a class="go" href="#projects">Or start with a single project</a></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap split">
+      <div>
+        <span class="script" aria-hidden="true">included</span>
+        <h2>Your portfolio, <em>clearly</em> reported</h2>
+        <p class="t">Every engagement includes the MSAG Owner Portal: NOI against budget, occupancy and leasing, capital projects and a written note from your asset manager, every month.</p>
+        <div class="acts"><a class="pill" href="#" data-dash target="_blank" rel="noopener">Explore the demo</a><a class="go" href="#how-we-work">What you'll receive</a></div>
+      </div>
+      <figure style="margin:0;min-width:0" class="screen-slot"></figure>
+    </div>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <article class="card principal">
+        <img src="img/portrait.jpg" alt="Alexis Symone Thomas, founder of Maison Symone Advisory Group" loading="lazy">
+        <div>
+          <span class="lab">Principal-led</span>
+          <h3 style="margin-top:8px">Alexis Symone <em>Thomas</em></h3>
+          <p>Founder and principal. Every engagement is led by her directly, with ten years across the leasing desk, property operations, commercial assets and an institutional investment platform.</p>
+          <div class="creds"><div><b>$1.7B+</b><span>real estate managed</span></div><div><b>150+</b><span>firms held to a standard she wrote</span></div><div><b>5</b><span>property types</span></div></div>
+        </div>
+        <div class="acts"><a class="pill line" href="#" data-portfolio target="_blank" rel="noopener">Full background</a><span class="fine">Career figures from roles before MSAG.</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="img/hero.jpg" alt="" loading="lazy">
+    <div class="wrap">
+      <span class="script" aria-hidden="true">let's begin</span>
+      <h2>Start with <em>one</em> property</h2>
+      <p>Send the last three months of your manager's reports. We'll review them and recommend the right level of involvement in a written proposal.</p>
+      <div class="acts"><a class="pill cream" href="#contact">Request a proposal</a><a class="go" href="#" data-book="home-cta">Book an intro call</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- =========================== WHY =========================== -->
+<div class="view" data-view="why" hidden>
+  <section class="wrap opener">
+    <span class="crumb lab"><b>01</b><i></i>Why asset management</span>
+    <h1>Well run is not the same as <em>well invested</em></h1>
+    <p>Your property manager is paid to operate the building: leasing, maintenance, collections and staff. No one on that team is responsible for whether the property is meeting your investment goals. That's the asset manager's job, and it's the only thing MSAG does.</p>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="head"><span class="lab">Two different jobs</span><h2>Property manager <em>and</em> asset manager</h2><p>You need both. They answer different questions, and they shouldn't be the same company.</p></div>
+      <div class="card roles"><table class="vs">
+        <thead><tr><th scope="col"><span class="lab"> </span></th><th scope="col"><small>Runs the building</small>Property manager</th><th scope="col" class="us"><small>Represents the owner</small>Asset manager · MSAG</th></tr></thead>
+        <tbody id="vs"></tbody>
+      </table></div>
+    </div>
+  </section>
+
+  <section class="sec linen">
+    <div class="wrap">
+      <div class="head"><span class="lab">Without one</span><h2>Where owners <em>lose value</em></h2><p>None of these show up as a single bad month. They show up as a slow gap between the plan and the results.</p></div>
+      <div class="gaps" id="gaps"></div>
+    </div>
+  </section>
+
+  <section class="sec dark">
+    <div class="wrap math">
+      <div>
+        <span class="script" aria-hidden="true">the math</span>
+        <h2>Every dollar of NOI is worth <em>many more</em> in value</h2>
+        <p class="t">Real estate is valued on its net operating income. A modest, recurring improvement in NOI is multiplied when the property is appraised, refinanced or sold. Move the sliders to see it.</p>
+      </div>
+      <div class="calc">
+        <div class="row">
+          <label>Annual NOI improvement <output id="o-noi">$50,000</output><input type="range" id="r-noi" min="10000" max="500000" step="5000" value="50000"></label>
+          <label>Cap rate <output id="o-cap">6.0%</output><input type="range" id="r-cap" min="4" max="9" step="0.25" value="6"></label>
+        </div>
+        <div class="res">
+          <div><span>Added property value</span><b id="o-val">$833K</b></div>
+          <div><span>Over a five-year hold, in cash flow</span><b id="o-cash">$250K</b></div>
+        </div>
+        <p class="note">Illustration only: value = NOI improvement ÷ cap rate; cash flow = NOI improvement × 5 years. Not a projection for any property.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="lab">What it looks like</span><h2>The difference, <em>in numbers</em></h2><p>Results from the founder's career before MSAG, each from asset-level work on a real portfolio.</p></div>
+      <div class="proofs" id="proofs"></div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="img/arch.jpg" alt="" loading="lazy">
+    <div class="wrap">
+      <h2>Choose your level of <em>involvement</em></h2>
+      <div class="acts"><a class="pill cream" href="#engagements">View engagements</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- =========================== ENGAGEMENTS =========================== -->
+<div class="view" data-view="engagements" hidden>
+  <section class="wrap opener">
+    <span class="crumb lab"><b>02</b><i></i>Ongoing engagements</span>
+    <h1>How involved do you <em>want us?</em></h1>
+    <p>Three levels of ongoing asset management. Each includes everything in the level before it, and you can change levels as the asset's needs change.</p>
+  </section>
+
+  <section class="sec tight">
+    <div class="wrap">
+      <div class="tiers" id="tiers"></div>
+      <p class="note">Engagements are priced per property and scaled for portfolios. Every fee is confirmed in a written proposal after a review of the property's reports.</p>
+    </div>
+  </section>
+
+  <section class="sec white">
+    <div class="wrap">
+      <div class="head"><span class="lab">Side by side</span><h2>What each level <em>includes</em></h2><p>Select a level above or a column below to highlight it.</p></div>
+      <div class="card cmp-wrap"><table class="cmp" id="cmp"></table></div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="lab">Choosing</span><h2>Which level <em>fits?</em></h2></div>
+      <div class="chooser">
+        <article class="card choose"><p class="q">"The property is stable and I trust my manager. I just want an independent read."</p><p class="a">Start with <b>Insight</b>.</p></article>
+        <article class="card choose"><p class="q">"We're behind budget, the manager is new, or I can't be on every call."</p><p class="a">Start with <b>Oversight</b>.</p></article>
+        <article class="card choose"><p class="q">"I have investors, a value-add plan, or I want to step back entirely."</p><p class="a">Start with <b>Full Asset Management</b>.</p></article>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:30px"><a class="pill" href="#contact">Request a proposal</a><a class="go" href="#projects">Need something one-time?</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- =========================== PROJECTS =========================== -->
+<div class="view" data-view="projects" hidden>
+  <section class="wrap opener">
+    <span class="crumb lab"><b>03</b><i></i>Projects and partnerships</span>
+    <h1>When one part of the plan needs <em>attention now</em></h1>
+    <p>A defined scope, timeline and fixed fee, with no ongoing commitment. Each project can stand alone or run alongside an ongoing engagement.</p>
+  </section>
+  <section class="sec tight">
+    <div class="wrap"><div class="projs" id="projs"></div></div>
+  </section>
+  <section class="sec dark" id="partnership">
+    <div class="wrap split" style="align-items:start">
+      <div>
+        <span class="script" aria-hidden="true">for investors</span>
+        <h2>An asset-side partner <em>on the deal</em></h2>
+        <p class="t">For investors putting capital into a property who want an experienced asset manager involved from underwriting through stabilization. The structure is agreed deal by deal.</p>
+        <div class="acts"><a class="pill cream" href="#contact" data-pick="partnership">Discuss a partnership</a></div>
+      </div>
+      <dl class="phase">
+        <div><dt>Before you commit</dt><dd>Review of the business plan, underwriting and operating assumptions against the market and the property's history.</dd></div>
+        <div><dt>At closing</dt><dd>A takeover plan: management agreement, budget, staffing, systems and the first 90 days.</dd></div>
+        <div><dt>Through the hold</dt><dd>Full asset management and investor-grade reporting until the business plan is complete.</dd></div>
+        <div><dt>Structure</dt><dd>An asset management fee, with participation in results discussed case by case.</dd></div>
+      </dl>
+    </div>
+  </section>
+</div>
+
+<!-- =========================== HOW WE WORK =========================== -->
+<div class="view" data-view="how-we-work" hidden>
+  <section class="wrap opener">
+    <span class="crumb lab"><b>04</b><i></i>How we work</span>
+    <h1>From first call to <em>first report</em></h1>
+    <p>Nothing new for your property manager to produce. We start from the reports they already send you.</p>
+  </section>
+  <section class="sec tight">
+    <div class="wrap">
+      <ol class="steps">
+        <li class="card"><small>Week 1</small><b>Intro call</b><span>Thirty minutes on the property, the hold and what you need. No preparation required.</span></li>
+        <li class="card"><small>Weeks 1–2</small><b>Property review</b><span>You share three months of reports, the budget and the management agreement. We read every line.</span></li>
+        <li class="card"><small>Week 3</small><b>Written proposal</b><span>Our findings, the level we'd recommend, its scope and its fee. You decide from there.</span></li>
+        <li class="card"><small>Month 1</small><b>Onboarding</b><span>Your owner portal goes live, the manager is briefed and the first monthly report follows.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec linen">
+    <div class="wrap split">
+      <div>
+        <span class="lab">Every month</span>
+        <h2>What you'll <em>receive</em></h2>
+        <p class="t">A portal you can check any time, and a written note that tells you what happened, why, and what we're doing about it.</p>
+        <div class="acts"><a class="pill" href="#" data-dash target="_blank" rel="noopener">Explore the demo</a><span class="fine">Demo uses illustrative properties.</span></div>
+      </div>
+      <figure style="margin:0;min-width:0" class="screen-slot"></figure>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="head"><span class="lab">Our standard</span><h2>Three <em>commitments</em></h2></div>
+      <div class="month">
+        <article class="card"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 6h16v10H8l-4 4z"/></svg></span><h3>You hear it first, from us</h3><p style="color:var(--muted);font-size:14.5px">Good news and bad, in plain language, before it reaches a distribution.</p></article>
+        <article class="card"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 15.5c3 0 7 1.5 7 4.5"/></svg></span><h3>Your manager gets a partner</h3><p style="color:var(--muted);font-size:14.5px">Clear targets and a fair scorecard. We know how to get the best out of a management team.</p></article>
+        <article class="card"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 18 L9 12 L13 15 L20 7"/><path d="M15 7 H20 V12"/></svg></span><h3>Every recommendation priced</h3><p style="color:var(--muted);font-size:14.5px">What it costs, what it's worth and when you should see it.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec white">
+    <div class="wrap">
+      <div class="head"><span class="lab">Fit</span><h2>Who we <em>work with</em></h2></div>
+      <div class="scope">
+        <article class="card"><h3>Clients</h3><ul>
+          <li>Private owners<span>Holding real estate without an asset management team</span></li>
+          <li>Family offices<span>Wanting institutional reporting on direct holdings</span></li>
+          <li>Sponsors and syndicators<span>Answering to investors on a business plan</span></li>
+          <li>Investors<span>Seeking an asset-side partner on a deal</span></li></ul></article>
+        <article class="card"><h3>Property types</h3><ul>
+          <li>Multifamily<span>Garden, mid-rise, new construction, lease-up</span></li>
+          <li>Office<span>Class A and B, repositioning</span></li>
+          <li>Medical office<span>Multi-tenant, national tenants</span></li>
+          <li>Retail and mixed-use<span>Ground-floor retail, residential over commercial</span></li></ul></article>
+        <article class="card"><h3>Markets</h3><ul>
+          <li>Florida<span>South Florida, Naples, Tampa Bay, Orlando, the Panhandle</span></li>
+          <li>The Southeast<span>Atlanta, North Georgia, Charlotte</span></li>
+          <li>The Northeast<span>Connecticut</span></li>
+          <li>Elsewhere<span>Oversight and reporting work remotely; site visits are planned in</span></li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="wrap faq">
+      <div><span class="lab">Questions</span><h2>Before you <em>call</em></h2></div>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+</div>
+
+<!-- =========================== CONTACT =========================== -->
+<div class="view" data-view="contact" hidden>
+  <section class="wrap opener">
+    <span class="crumb lab"><b>05</b><i></i>Next step</span>
+    <h1>Request a <em>proposal</em></h1>
+    <p>Tell us about the property and the level of involvement you're considering. You'll hear back within two business days.</p>
+  </section>
+  <section class="sec tight">
+    <div class="wrap contact">
+      <div>
+        <div class="card direct"><dl>
+          <div><dt>Email</dt><dd><a data-email-link href="#"><span data-email-text></span></a></dd></div>
+          <div><dt>Call</dt><dd><a href="#" data-book="contact">Book a 30-minute intro call</a></dd></div>
+          <div><dt>Office</dt><dd>Miami, Florida</dd></div>
+        </dl></div>
+        <div class="card expect"><h3>What happens next</h3><ol>
+          <li>We reply within two business days.</li>
+          <li>We ask for three months of reports, the budget and the management agreement.</li>
+          <li>You receive a written proposal with our findings, the recommended level and its fee.</li>
+        </ol></div>
+      </div>
+      <form class="card form" id="form" novalidate>
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Company<input name="company" autocomplete="organization"></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>I am<select name="role"><option>A private owner</option><option>A family office</option><option>A sponsor or syndicator</option><option>An investor</option><option>A lender or advisor</option></select></label>
+        <label>Property type<select name="type"><option>Multifamily</option><option>Office</option><option>Medical office</option><option>Retail</option><option>Mixed-use</option><option>A portfolio</option></select></label>
+        <label>Size and market<input name="size" placeholder="e.g. 240 units, Tampa"></label>
+        <label class="full">Interested in<select name="need" id="need"></select></label>
+        <label class="full">Anything we should know<textarea name="note"></textarea></label>
+        <div class="full acts"><button class="pill" type="submit">Prepare my request</button><span class="msg" id="form-msg" role="status"></span></div>
+        <div class="out" id="out" hidden>
+          <span class="lab">Your request is ready to send</span>
+          <pre id="out-text"></pre>
+          <div class="row"><a class="pill" id="out-mail" href="#">Open in email</a><button class="pill line" type="button" id="out-copy">Copy text</button><span class="msg">or send to <span data-email-text></span></span></div>
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="wrap cols">
+    <div><img src="img/msag-logo-cream.png" alt="Maison Symone Advisory Group"><span>Independent real estate asset management for owners, sponsors and investors.</span></div>
+    <div><h4>The firm</h4><a href="#why">Why asset management</a><a href="#engagements">Engagements</a><a href="#projects">Projects</a><a href="#how-we-work">How we work</a><a href="#contact">Contact</a></div>
+    <div><h4>Elsewhere</h4><a href="#" data-dash target="_blank" rel="noopener">Owner portal demo</a><a href="#" data-portfolio target="_blank" rel="noopener">Founder's portfolio</a><a href="https://www.linkedin.com/in/alexisthomas713/" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div><h4>Contact</h4><span data-email-text></span><span>Miami, Florida</span><a href="#" data-book="footer">Book an intro call</a></div>
+  </div>
+  <div class="wrap legal"><span>© <span id="yr">2026</span> Maison Symone Advisory Group</span><span>Advisory services only. MSAG does not manage property, hold client funds, or give legal, tax or securities advice.</span></div>
+</footer>
+
+<script>
+/* ===================== SETTINGS ===================== */
+const EMAIL = "hello@maisonsymoneadvisory.com";
+const BOOKING_URL = "https://calendly.com/maisonsymone/30min";
+const DASHBOARD_URL = "https://portal.maisonsymoneadvisory.com/demo";
+const PORTFOLIO_URL = "https://alexissymone.com";
+/* Pricing: leave "" to show "Quoted per property". Fill in to publish, e.g. "From $1,500 / month". */
+const PRICE = { insight:"", oversight:"", full:"" };
+
+/* ===================== CONTENT ===================== */
+const I = { /* small line icons, same style as the owner portal */
+  plan:'<path d="M4 20V4"/><path d="M4 20H20"/><path d="M7 15L11 11L14 13L19 7"/>',
+  people:'<circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11l2 2 4-4"/>',
+  coin:'<circle cx="12" cy="12" r="8"/><path d="M14.5 9.5c-.5-1-1.5-1.5-2.5-1.5-1.4 0-2.5.8-2.5 2s1.1 1.7 2.5 2 2.5.8 2.5 2-1.1 2-2.5 2c-1 0-2-.5-2.5-1.5M12 6.5v1.5M12 16v1.5"/>',
+  eye:'<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  drift:'<path d="M4 7h10"/><path d="M4 12h14"/><path d="M4 17h7"/><path d="M17 15l3 3-3 3"/>',
+  wrench:'<path d="M14.5 6.5a4 4 0 0 0-5 5L4 17l3 3 5.5-5.5a4 4 0 0 0 5-5l-2.5 2.5-2.5-.5-.5-2.5z"/>',
+  key:'<circle cx="8" cy="15" r="4"/><path d="M11 12L20 3M17 6l2 2M15 8l2 2"/>',
+  bank:'<path d="M3 10L12 4L21 10"/><path d="M5 10V18M10 10V18M14 10V18M19 10V18M3 20H21"/>',
+  scale:'<path d="M12 4V20M6 20H18"/><path d="M5 8H19"/><path d="M5 8L2.5 14h5zM19 8l-2.5 6h5z"/>',
+  clock:'<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>'
+};
+const svg=k=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">${I[k]}</svg>`;
+
+const VALUES = [
+ {i:"plan", t:"A plan that's owned", p:"Someone is accountable for the business plan, the budget and the results, not just the building."},
+ {i:"people", t:"A manager held to it", p:"Clear targets, regular accountability and a fair scorecard for your property manager."},
+ {i:"coin", t:"Capital spent with a return", p:"Every project priced against the rent or savings it should produce before it's approved."},
+ {i:"eye", t:"Reporting you can act on", p:"What happened, why and what's being done, in plain language, every month."}
+];
+const VS = [
+ ["Works for","The property: operations, residents and staff","You: the owner and your investors"],
+ ["Measured on","Occupancy, collections, work orders, resident satisfaction","NOI, cash flow, value and your return"],
+ ["Time horizon","This month and this lease","The whole hold, from purchase to sale"],
+ ["Decides","How to execute the budget","What the budget and business plan should be"],
+ ["Capital","Gets bids and manages the work","Decides what's worth funding and holds it to a return"],
+ ["Debt and exit","Rarely involved","Refinance, hold and sale timing and preparation"],
+ ["Typically paid","A share of revenue collected","A fee for oversight, independent of the manager"]
+];
+const GAPS = [
+ {i:"drift", t:"Budget drift", p:"Expenses creep and revenue lags by small amounts each month, and no one is assigned to close the gap.", f:"Line-by-line variance review and a reforecast with a plan to recover."},
+ {i:"key", t:"Leasing on autopilot", p:"Pricing, concessions and renewals follow habit rather than the market, quietly giving up rent.", f:"Leasing, pricing and renewal strategy reviewed against comps."},
+ {i:"wrench", t:"Capital without a return", p:"Projects are approved because they're needed, not because they pay back, or are deferred until they cost more.", f:"A capital plan with a return calculated for every project."},
+ {i:"people", t:"No one holding the manager accountable", p:"Without clear targets and follow-up, even a good management team optimizes for its own priorities.", f:"Targets, a scorecard and regular accountability calls."},
+ {i:"bank", t:"Surprises for lenders and investors", p:"Bad news reaches investors late, and refinance or covenant issues are found too close to the deadline.", f:"Early warning, cash flow forecasting and lender-ready reporting."},
+ {i:"clock", t:"The owner's time", p:"Owners end up doing asset management themselves, in the evenings, without the benchmarks or the leverage.", f:"One accountable asset manager, and a monthly report you can read in ten minutes."}
+];
+const PROOFS = [
+ ["75→99%","Occupancy in under six months","A multifamily turnaround through pricing, leasing and operating strategy.","RK Properties"],
+ ["$500K","Recurring annual savings","From expense, CAM and contract work across 13 commercial assets.","The Norton Agency"],
+ ["+15%","NOI after repositioning","Following a $22M Class A office capital program.","The Norton Agency"]
+];
+const TIERS = [
+ {id:"insight", lv:1, name:"Insight", tag:"See the asset clearly.",
+  desc:"Independent monthly reporting and review. You make the decisions; we make sure you're seeing the right numbers.",
+  items:["Monthly owner report and portal","Budget-to-actual variance review","Written note from your asset manager","Exceptions flagged, with a recommended action","Quarterly review call"],
+  fit:"Stabilized assets with a manager you trust.", basis:"Flat monthly fee per property"},
+ {id:"oversight", lv:2, name:"Oversight", tag:"Hold the manager to the plan.", badge:"Recommended start",
+  desc:"Active, owner-side oversight of your property manager, measured against an institutional standard.",
+  inc:"Everything in Insight, plus",
+  items:["Two manager accountability calls a month","Budget preparation and quarterly reforecast","Leasing, pricing and renewal review","Capital project tracking","Manager performance scorecard","Quarterly site visit"],
+  fit:"Assets behind budget, a new manager, or an owner who can't be on the calls.", basis:"Flat monthly fee per property"},
+ {id:"full", lv:3, name:"Full Asset Management", tag:"We run the business plan.",
+  desc:"MSAG acts as your asset manager for the hold: the plan, the manager relationship, capital, debt and reporting.",
+  inc:"Everything in Oversight, plus",
+  items:["Weekly manager calls and cash review","Business plan ownership and execution","Cash flow and distribution forecasting","Lender and investor reporting","Manager selection and transitions","Refinance, hold and sale analysis","Monthly site visits"],
+  fit:"Sponsors with investors, value-add plans, or owners stepping back entirely.", basis:"Percentage of gross income, with a monthly minimum"}
+];
+const CMP = [
+ ["Reporting",null],
+ ["Monthly owner report and portal",true,true,true],
+ ["Written monthly note from your asset manager",true,true,true],
+ ["Budget-to-actual variance review",true,true,true],
+ ["Lender and investor reporting packages",false,false,true],
+ ["Review cadence","Quarterly call","Monthly","Weekly"],
+ ["Property manager",null],
+ ["Manager accountability calls",false,"Twice monthly","Weekly"],
+ ["Manager performance scorecard",false,true,true],
+ ["Manager selection, onboarding and transitions",false,false,true],
+ ["Plan and budget",null],
+ ["Annual budget and quarterly reforecast",false,true,true],
+ ["Leasing, pricing and renewal strategy",false,"Review","Direct"],
+ ["Business plan ownership",false,false,true],
+ ["Cash flow and distribution forecasting",false,false,true],
+ ["Capital and debt",null],
+ ["Capital project oversight",false,"Tracking","Full management"],
+ ["CapEx return analysis",false,true,true],
+ ["Refinance, hold and sale analysis",false,false,true],
+ ["Site visits",false,"Quarterly","Monthly"],
+ ["Fee",null],
+ ["How it's priced","Flat, per property","Flat, per property","% of gross income, monthly minimum"]
+];
+const PROJECTS = [
+ {id:"diligence", i:"eye", t:"Acquisition due diligence", p:"An operator's review of the deal before you close.", scope:"Underwriting, T-12 and rent roll audit, unit walks, CapEx review", time:"2–4 weeks"},
+ {id:"takeover", i:"key", t:"Takeover and stabilization", p:"The first 90 days after closing, planned and run to a stabilized asset.", scope:"Takeover plan, staffing and systems, lease-up, weekly tracking", time:"90 days"},
+ {id:"manager", i:"people", t:"Manager search and transition", p:"Choosing, contracting and onboarding the right property manager.", scope:"RFP, interviews, agreement review, transition checklist", time:"6–10 weeks"},
+ {id:"capital", i:"wrench", t:"Capital plan and repositioning", p:"A capital program priced against the rent or savings it should produce.", scope:"Needs assessment, return by project, bid review, schedule", time:"4–6 weeks"},
+ {id:"refi", i:"bank", t:"Refinance package", p:"The operating story and data a lender needs, prepared and managed.", scope:"Pro forma, T-12, rent roll, lender questions and site visits", time:"3–6 weeks"},
+ {id:"review", i:"scale", t:"Portfolio review", p:"An independent second opinion on how your assets and managers are performing.", scope:"Benchmarking, variance analysis, ranked recommendations", time:"3–4 weeks"}
+];
+const FAQ = [
+ ["Do you manage the property?","No. MSAG doesn't manage property, collect rent or employ site staff. Your property manager runs the building; we represent you above them. Because we don't manage property, we never grade our own work, and our only interest is yours."],
+ ["Do I have to replace my property manager?","No. Most engagements start with your current manager. If performance doesn't meet the standard, Oversight and Full Asset Management include running the search and transition."],
+ ["Isn't my property manager already doing this?","They're doing a different job. A property manager is measured on operations and usually paid on revenue collected. An asset manager is measured on your NOI, cash flow and value, and works for you independently of the manager."],
+ ["Which level is right for me?","Insight suits a stabilized asset with a manager you trust. Oversight suits an asset behind budget or a new manager. Full Asset Management suits sponsors with investors, value-add plans or owners stepping back. The property review tells us which fits, and you can change levels as the asset changes."],
+ ["How are fees set?","Insight and Oversight are flat monthly fees per property. Full Asset Management is a percentage of gross income with a monthly minimum. Projects are fixed fees. Every fee is confirmed in a written proposal before you commit."],
+ ["What do you need from me to start?","The last three months of your manager's reports, the current budget and the management agreement. There's nothing new for your manager to produce."],
+ ["Which software do you work with?","Whatever your manager uses: Yardi, AppFolio, RealPage, Entrata or spreadsheets."],
+ ["Do you work outside Florida?","Yes. Reporting and oversight are done remotely, and site visits are planned into the engagement."]
+];
+
+/* ===================== RENDER ===================== */
+const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
+const icon=k=>{const s=el("span","ico"); s.setAttribute("aria-hidden","true"); s.innerHTML=svg(k); return s;};
+const meter=n=>{const m=el("span","meter"); m.setAttribute("aria-hidden","true"); for(let k=1;k<=3;k++) m.appendChild(el("i",k<=n?"f":null)); return m;};
+
+/* home values */
+const vh=document.getElementById("vals-home");
+VALUES.forEach(v=>{const a=el("article","card val"); const t=el("div","ctop"); t.appendChild(icon(v.i)); a.appendChild(t); a.appendChild(el("h3",null,v.t)); a.appendChild(el("p",null,v.p)); vh.appendChild(a);});
+/* home minis */
+const mn=document.getElementById("minis");
+TIERS.forEach(t=>{const a=el("a","card mini"); a.href="#tier-"+t.id; const l=el("div","lvl"); l.appendChild(el("span","lab","Level "+t.lv)); l.appendChild(meter(t.lv)); a.appendChild(l);
+  a.appendChild(el("h3",null,t.name)); a.appendChild(el("p","tag",t.tag)); a.appendChild(el("p",null,t.desc)); a.appendChild(el("span","go","See what's included")); mn.appendChild(a);});
+
+/* why page */
+const vs=document.getElementById("vs");
+VS.forEach(([k,a,b])=>{const tr=el("tr"); const th=el("th",null,k); th.scope="row"; tr.appendChild(th); const ta=el("td",null,a); ta.dataset.l="Property manager"; const tb2=el("td","us",b); tb2.dataset.l="Asset manager · MSAG"; tr.appendChild(ta); tr.appendChild(tb2); vs.appendChild(tr);});
+const gp=document.getElementById("gaps");
+GAPS.forEach(g=>{const a=el("article","card gap"); a.appendChild(icon(g.i)); a.appendChild(el("h3",null,g.t)); a.appendChild(el("p",null,g.p)); const f=el("p","fix"); f.appendChild(el("b",null,"With MSAG: ")); f.appendChild(document.createTextNode(g.f)); a.appendChild(f); gp.appendChild(a);});
+const pf=document.getElementById("proofs");
+PROOFS.forEach(([n,t,d,f])=>{const a=el("article","card proof"); a.appendChild(el("b",null,n)); a.appendChild(el("h3",null,t)); a.appendChild(el("p",null,d)); a.appendChild(el("span","from",f)); pf.appendChild(a);});
+/* value calculator */
+const rN=document.getElementById("r-noi"), rC=document.getElementById("r-cap");
+const money=v=>v>=1e6?"$"+(v/1e6).toFixed(2).replace(/\.?0+$/,"")+"M":"$"+Math.round(v/1000)+"K";
+function calc(){const n=+rN.value, c=+rC.value;
+  document.getElementById("o-noi").textContent="$"+n.toLocaleString("en-US");
+  document.getElementById("o-cap").textContent=c.toFixed(2).replace(/0$/,"")+"%";
+  document.getElementById("o-val").textContent=money(n/(c/100));
+  document.getElementById("o-cash").textContent=money(n*5);}
+rN.addEventListener("input",calc); rC.addEventListener("input",calc); calc();
+
+/* engagements */
+const tb=document.getElementById("tiers");
+TIERS.forEach(t=>{
+  const a=el("article","card tier"); a.id="tier-"+t.id; a.dataset.tier=t.id; a.tabIndex=0; a.setAttribute("aria-label",t.name+" engagement");
+  if(t.badge) a.appendChild(el("span","badge",t.badge));
+  const l=el("div","lvl"); l.appendChild(el("span","lab","Level "+t.lv+" of 3")); l.appendChild(meter(t.lv)); a.appendChild(l);
+  a.appendChild(el("h3",null,t.name)); a.appendChild(el("p","tag",t.tag)); a.appendChild(el("p","desc",t.desc));
+  const ul=el("ul"); if(t.inc) ul.appendChild(el("li","inc",t.inc)); t.items.forEach(x=>ul.appendChild(el("li",null,x))); a.appendChild(ul);
+  const fit=el("p","fit"); fit.appendChild(el("b",null,"Best for: ")); fit.appendChild(document.createTextNode(t.fit)); a.appendChild(fit);
+  const fee=el("div","fee"); fee.appendChild(el("span",null,"Fee")); fee.appendChild(el("b",null,PRICE[t.id]||"Quoted per property")); fee.appendChild(el("small",null,t.basis)); a.appendChild(fee);
+  const b=el("a","pill"+(t.badge?"":" line"),"Choose "+t.name); b.href="#contact"; b.dataset.pick=t.id; a.appendChild(b);
+  tb.appendChild(a);
+});
+const cmp=document.getElementById("cmp"); const th0=el("thead"), hr=el("tr"); const h0=el("th"); h0.scope="col"; hr.appendChild(h0);
+TIERS.forEach(t=>{const th=el("th"); th.scope="col"; th.dataset.col=t.id; th.style.cursor="pointer"; th.appendChild(el("small",null,"Level "+t.lv)); th.appendChild(document.createTextNode(t.name)); hr.appendChild(th);});
+th0.appendChild(hr); cmp.appendChild(th0);
+const body=el("tbody");
+CMP.forEach(r=>{const tr=el("tr");
+  if(r[1]===null){tr.className="grp"; const th=el("th",null,r[0]); th.colSpan=4; th.scope="colgroup"; tr.appendChild(th); body.appendChild(tr); return;}
+  const th=el("th",null,r[0]); th.scope="row"; tr.appendChild(th);
+  [1,2,3].forEach(k=>{const v=r[k], td=el("td"); td.dataset.col=TIERS[k-1].id;
+    if(v===true){td.className="on"; td.textContent="●"; td.setAttribute("aria-label","Included");}
+    else if(v===false){td.className="off"; td.textContent="—"; td.setAttribute("aria-label","Not included");}
+    else {td.className="txt"; td.textContent=v;} tr.appendChild(td);});
+  body.appendChild(tr);});
+cmp.appendChild(body);
+function selectTier(id){document.querySelectorAll(".tier").forEach(x=>x.classList.toggle("on",x.dataset.tier===id)); document.querySelectorAll("#cmp [data-col]").forEach(c=>c.classList.toggle("col-on",c.dataset.col===id));}
+tb.addEventListener("click",e=>{const t=e.target.closest(".tier"); if(t&&!e.target.closest("a")) selectTier(t.dataset.tier);});
+tb.addEventListener("keydown",e=>{if((e.key==="Enter"||e.key===" ")&&e.target.classList.contains("tier")){e.preventDefault(); selectTier(e.target.dataset.tier);}});
+cmp.addEventListener("click",e=>{const c=e.target.closest("[data-col]"); if(c) selectTier(c.dataset.col);});
+selectTier("oversight");
+
+/* projects */
+const pj=document.getElementById("projs");
+PROJECTS.forEach((p,i)=>{const a=el("article","card pj"); const t=el("div","ctop"); t.appendChild(icon(p.i)); t.appendChild(el("span","n",String(i+1).padStart(2,"0"))); a.appendChild(t);
+  a.appendChild(el("h3",null,p.t)); a.appendChild(el("p",null,p.p));
+  const dl=el("dl"); [["Scope",p.scope],["Timeline",p.time],["Fee","Fixed, per project"]].forEach(([k,v])=>{const d=el("div"); d.appendChild(el("dt",null,k)); d.appendChild(el("dd",null,v)); dl.appendChild(d);}); a.appendChild(dl);
+  const g=el("a","go","Request this project"); g.href="#contact"; g.dataset.pick="p:"+p.id; a.appendChild(g); pj.appendChild(a);});
+
+/* faq */
+const fq=document.getElementById("faq-list"); FAQ.forEach(([q,a],i)=>{const d=el("details"); if(i===0) d.open=true; d.appendChild(el("summary",null,q)); d.appendChild(el("p",null,a)); fq.appendChild(d);});
+
+/* portal preview (sample) */
+const SCREEN=`<div class="screen" role="img" aria-label="Sample owner report: headline figures, monthly NOI against budget and a note from the asset manager">
+ <div class="bar" aria-hidden="true"><i></i><i></i><i></i></div>
+ <div class="sbody" aria-hidden="true">
+  <div class="sside"><img src="img/msag-mono-ink.png" alt=""><span class="on">Summary</span><span>Financials</span><span>Leasing</span><span>Properties</span><span>Market</span><span>Documents</span></div>
+  <div class="smain">
+   <span class="swel">Welcome back</span><span class="stitle">Your portfolio</span><span class="smeta">October 2026 report · five properties</span>
+   <div class="skpis">
+    <div><span>NOI in October</span><b>$890K</b><em class="down">7.5% under budget</em></div>
+    <div><span>NOI this year</span><b>$8.88M</b><em class="down">7.0% under budget</em></div>
+    <div><span>Occupancy</span><b>93.2%</b><em class="up">Up 0.2 points</em></div>
+    <div><span>Cash after loans</span><b>$2.81M</b><em>Distributions $3.23M</em></div>
+   </div>
+   <div class="schart"><span>NOI by month · actual against budget</span><svg viewBox="0 0 660 232" width="100%"><line x1="56" x2="640" y1="183" y2="183" stroke="#EFE7DF"/><line x1="56" x2="640" y1="118" y2="118" stroke="#EFE7DF"/><line x1="56" x2="640" y1="53" y2="53" stroke="#EFE7DF"/><path d="M70 128.1 L131.1 134.8 L192.2 123.2 L253.3 130.9 L314.4 142.9 L375.6 131 L436.7 108.7 L497.8 159.6 L558.9 143.4 L620 130.4 L620 196 L70 196 Z" fill="#A88B6E" opacity=".16"/><path d="M70 56.1 L131.1 53.9 L192.2 51.6 L253.3 49.4 L314.4 47.1 L375.6 44.9 L436.7 42.6 L497.8 40.4 L558.9 38.1 L620 35.9" fill="none" stroke="#7A6C62" stroke-width="1.5" stroke-dasharray="5 5"/><path d="M70 128.1 L131.1 134.8 L192.2 123.2 L253.3 130.9 L314.4 142.9 L375.6 131 L436.7 108.7 L497.8 159.6 L558.9 143.4 L620 130.4" fill="none" stroke="#A88B6E" stroke-width="2.6" stroke-linejoin="round"/><circle cx="620" cy="130.4" r="5" fill="#A88B6E" stroke="#fff" stroke-width="2"/>${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct"].map((m,i)=>`<text x="${(70+i*61.11).toFixed(1)}" y="222" text-anchor="middle" font-family="Jost, sans-serif" font-size="12" fill="#6F6158">${m}</text>`).join("")}</svg></div>
+   <div class="snote"><small>A note from your asset manager</small>October was mixed: two properties met budget, two are behind on vacancy. Both managers owe us a 60-day leasing plan.</div>
+  </div>
+ </div>
+</div><figcaption class="figcap">Sample report with illustrative properties and figures.</figcaption>`;
+document.querySelectorAll(".screen-slot").forEach(f=>f.innerHTML=SCREEN);
+
+/* form options */
+const need=document.getElementById("need");
+[["insight","Insight (Level 1)"],["oversight","Oversight (Level 2)"],["full","Full Asset Management (Level 3)"]]
+ .concat(PROJECTS.map(p=>["p:"+p.id,"Project: "+p.t])).concat([["partnership","Asset partnership"],["unsure","Not sure yet"]])
+ .forEach(([v,l])=>{const o=el("option",null,l); o.value=v; need.appendChild(o);});
+need.value="unsure";
+document.addEventListener("click",e=>{const a=e.target.closest("[data-pick]"); if(a) need.value=a.dataset.pick;});
+
+/* links */
+document.querySelectorAll("[data-dash]").forEach(a=>a.href=DASHBOARD_URL);
+document.querySelectorAll("[data-portfolio]").forEach(a=>a.href=PORTFOLIO_URL);
+document.querySelectorAll("[data-email-text]").forEach(s=>s.textContent=EMAIL);
+document.querySelectorAll("[data-email-link]").forEach(a=>a.href="mailto:"+EMAIL);
+document.querySelectorAll("[data-book]").forEach(a=>{ if(!BOOKING_URL) return;
+  a.href=BOOKING_URL+(BOOKING_URL.includes("?")?"&":"?")+"utm_source=msag-site&utm_campaign="+encodeURIComponent(a.dataset.book||"general"); a.target="_blank"; a.rel="noopener"; });
+document.getElementById("yr").textContent=new Date().getFullYear();
+
+/* contact form: no server, so prepare the message */
+const form=document.getElementById("form"), msg=document.getElementById("form-msg"), out=document.getElementById("out");
+form.addEventListener("submit",e=>{e.preventDefault(); const f=Object.fromEntries(new FormData(form));
+  if(!f.name.trim()||!/^\S+@\S+\.\S+$/.test(f.email.trim())){msg.textContent="Please add your name and a valid email."; return;}
+  msg.textContent=""; const label=need.options[need.selectedIndex].text;
+  const body=`Hello Maison Symone Advisory Group,\n\nName: ${f.name}\nCompany: ${f.company||"-"}\nEmail: ${f.email}\nI am: ${f.role}\nProperty: ${f.type}${f.size?", "+f.size:""}\nInterested in: ${label}\n\n${f.note||""}\n`;
+  document.getElementById("out-text").textContent=body;
+  document.getElementById("out-mail").href="mailto:"+EMAIL+"?subject="+encodeURIComponent("Proposal request: "+label)+"&body="+encodeURIComponent(body);
+  out.hidden=false; out.scrollIntoView({block:"nearest"});});
+document.getElementById("out-copy").addEventListener("click",e=>{const b=e.currentTarget,t=document.getElementById("out-text").textContent;
+  try{navigator.clipboard.writeText(t).then(()=>{b.textContent="Copied"; setTimeout(()=>b.textContent="Copy text",1800);},()=>{b.textContent="Select the text above";});}catch(err){b.textContent="Select the text above";}});
+
+/* routing */
+const views=[...document.querySelectorAll(".view")], nav=document.getElementById("nav"), menu=document.getElementById("menu");
+function route(){
+  let h=(location.hash||"#home").slice(1), anchor=null;
+  if(h==="top") h="home";
+  if(!views.some(v=>v.dataset.view===h)){const t=document.getElementById(h); const v=t&&t.closest(".view"); if(v){anchor=h; h=v.dataset.view;} else h="home";}
+  views.forEach(v=>v.hidden=v.dataset.view!==h);
+  nav.querySelectorAll("a").forEach(a=>a.getAttribute("href")==="#"+h?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current"));
+  nav.classList.remove("open"); menu.setAttribute("aria-expanded","false");
+  const t=anchor&&document.getElementById(anchor);
+  if(t){ requestAnimationFrame(()=>t.scrollIntoView({block:"center"})); const tier=t.dataset&&t.dataset.tier; if(tier) selectTier(tier); }
+  else window.scrollTo(0,0);
+}
+menu.addEventListener("click",()=>{const o=nav.classList.toggle("open"); menu.setAttribute("aria-expanded",String(o));});
+
+/* back button and previous/next pager on inner pages */
+const ORDER=[["home","Home"],["why","Why asset management"],["engagements","Engagements"],["projects","Projects"],["how-we-work","How we work"],["contact","Contact"]];
+let depth=0; window.addEventListener("hashchange",()=>{depth++;});
+views.forEach(v=>{
+  const id=v.dataset.view, i=ORDER.findIndex(o=>o[0]===id); if(i<=0) return;
+  const op=v.querySelector(".opener");
+  if(op){const b=el("button","back"); b.type="button"; b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Back';
+    b.addEventListener("click",()=>{ if(depth>0){depth-=2; history.back();} else location.hash="#home"; });
+    op.insertBefore(b,op.firstChild);}
+  const pg=el("nav","pager"); pg.setAttribute("aria-label","More pages"); const w=el("div","wrap");
+  const prev=ORDER[i-1], next=ORDER[i+1];
+  const mk=(o,cls,lab)=>{const a=el("a",cls); a.href="#"+o[0]; a.appendChild(el("span",null,lab)); a.appendChild(el("b",null,o[1])); return a;};
+  w.appendChild(mk(prev,"prev","← Previous")); if(next) w.appendChild(mk(next,"next","Next →"));
+  pg.appendChild(w); v.appendChild(pg);
+});
+window.addEventListener("hashchange",route); route();
+</script>
+</body>
+</html>
